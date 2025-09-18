@@ -2,39 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Medical Smart Reminder Design System - Clean, Professional, Trustworthy
+All colors MUST be HSL. Inspired by medical platforms like Medisafe.
 */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 40% 5%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 5%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 5%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Medical Blue Theme - Professional and Trustworthy */
+    --primary: 217 91% 60%; /* Medical Blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 189 100% 65%; /* Turquoise accent */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 210 40% 10%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 189 100% 65%; /* Turquoise for CTAs */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    /* Medical-specific design tokens */
+    --medical-blue: 217 91% 60%;
+    --medical-turquoise: 189 100% 65%;
+    --medical-navy: 210 40% 15%;
+    --medical-light: 210 40% 98%;
+    
+    /* Beautiful gradients for hero sections */
+    --gradient-medical: linear-gradient(135deg, hsl(var(--medical-blue)), hsl(var(--medical-turquoise)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--medical-light)), hsl(var(--background)));
+    --gradient-overlay: linear-gradient(135deg, hsl(var(--medical-blue) / 0.9), hsl(var(--medical-turquoise) / 0.8));
+    
+    /* Elegant shadows with medical blue tint */
+    --shadow-medical: 0 10px 30px -10px hsl(var(--medical-blue) / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(var(--medical-blue) / 0.1);
+    --shadow-glow: 0 0 40px hsl(var(--medical-turquoise) / 0.3);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
@@ -56,33 +77,45 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 210 40% 5%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 210 40% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 210 40% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 189 100% 65%;
+    --primary-foreground: 210 40% 5%;
+    --primary-glow: 217 91% 70%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 210 40% 12%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 40% 12%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 189 100% 65%;
+    --accent-foreground: 210 40% 5%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 210 40% 15%;
+    --input: 210 40% 15%;
+    --ring: 189 100% 65%;
+
+    /* Dark mode medical colors */
+    --medical-blue: 217 91% 70%;
+    --medical-turquoise: 189 100% 70%;
+    --medical-navy: 210 40% 98%;
+    --medical-light: 210 40% 8%;
+    
+    /* Dark mode gradients */
+    --gradient-medical: linear-gradient(135deg, hsl(var(--medical-blue) / 0.8), hsl(var(--medical-turquoise) / 0.7));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--medical-light)), hsl(var(--background)));
+    --gradient-overlay: linear-gradient(135deg, hsl(var(--medical-blue) / 0.7), hsl(var(--medical-turquoise) / 0.6));
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +133,27 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  /* Custom utility classes for medical design */
+  .gradient-medical {
+    background: var(--gradient-medical);
+  }
+  
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+  
+  .shadow-medical {
+    box-shadow: var(--shadow-medical);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
   }
 }
