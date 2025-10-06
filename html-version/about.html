@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MediSmart</title>
+    <meta name="description" content="Learn about MediSmart's mission to revolutionize medication management through smart technology and healthcare innovation.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation (same as index) -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                        <i data-lucide="heart" class="w-5 h-5 text-primary"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white">MediSmart</span>
+                </a>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html#features" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        Features<span class="nav-underline"></span>
+                    </a>
+                    <a href="how-it-works.html" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        How It Works<span class="nav-underline"></span>
+                    </a>
+                    <a href="pricing.html" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        Pricing<span class="nav-underline"></span>
+                    </a>
+                    <a href="about.html" class="nav-link text-white transition-smooth relative group">
+                        About<span class="nav-underline w-full"></span>
+                    </a>
+                    <a href="contact.html" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        Contact<span class="nav-underline"></span>
+                    </a>
+                </div>
+
+                <div class="hidden md:block">
+                    <button class="btn-secondary bg-white text-primary hover:bg-white/90 px-4 py-2 rounded-md text-sm font-medium">
+                        Get Started
+                    </button>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-white/20">
+                <div class="flex flex-col gap-4">
+                    <a href="index.html#features" class="text-white/90 hover:text-white transition-smooth py-2">Features</a>
+                    <a href="how-it-works.html" class="text-white/90 hover:text-white transition-smooth py-2">How It Works</a>
+                    <a href="pricing.html" class="text-white/90 hover:text-white transition-smooth py-2">Pricing</a>
+                    <a href="about.html" class="text-white transition-smooth py-2">About</a>
+                    <a href="contact.html" class="text-white/90 hover:text-white transition-smooth py-2">Contact</a>
+                    <button class="btn-secondary bg-white text-primary hover:bg-white/90 px-4 py-2 rounded-md text-sm font-medium mt-2">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="min-h-screen bg-gradient-subtle">
+        <!-- Hero Section -->
+        <section class="pt-24 pb-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-4xl mx-auto mb-16">
+                    <h1 class="text-4xl md:text-6xl font-bold text-foreground mb-6">
+                        Revolutionizing Medication Management
+                    </h1>
+                    <p class="text-xl text-muted-foreground leading-relaxed">
+                        Founded by healthcare professionals and technology experts who believe 
+                        that missing medications shouldn't be a life-threatening mistake.
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img 
+                            src="../src/assets/doctor-consultation.jpg" 
+                            alt="Healthcare professional using MediSmart technology"
+                            class="rounded-2xl shadow-elegant w-full"
+                        />
+                    </div>
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-foreground">Our Mission</h2>
+                        <p class="text-lg text-muted-foreground leading-relaxed">
+                            Every year, medication errors affect millions of patients worldwide. 
+                            We're building intelligent technology to ensure the right medication 
+                            reaches the right person at the right time, every time.
+                        </p>
+                        <p class="text-lg text-muted-foreground leading-relaxed">
+                            Through AI-powered reminders, smart tracking, and personalized 
+                            health insights, we're making medication management simple, 
+                            safe, and stress-free for patients and families everywhere.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-16 bg-primary/5">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">500K+</div>
+                        <div class="text-muted-foreground">Active Users</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">2M+</div>
+                        <div class="text-muted-foreground">Medications Tracked</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">99.9%</div>
+                        <div class="text-muted-foreground">Uptime</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">4.8★</div>
+                        <div class="text-muted-foreground">App Store Rating</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                        Our Core Values
+                    </h2>
+                    <p class="text-lg text-muted-foreground">
+                        These principles guide every decision we make and every feature we build.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card text-center p-6 hover:shadow-lg transition-smooth rounded-lg">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="heart" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-foreground mb-3">
+                            Patient-Centered Care
+                        </h3>
+                        <p class="text-muted-foreground">
+                            Every feature we build puts patient health and safety at the forefront of our design decisions.
+                        </p>
+                    </div>
+
+                    <div class="card text-center p-6 hover:shadow-lg transition-smooth rounded-lg">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="shield" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-foreground mb-3">
+                            Privacy & Security
+                        </h3>
+                        <p class="text-muted-foreground">
+                            HIPAA-compliant infrastructure ensures your medical information stays protected and confidential.
+                        </p>
+                    </div>
+
+                    <div class="card text-center p-6 hover:shadow-lg transition-smooth rounded-lg">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="lightbulb" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-foreground mb-3">
+                            Innovation
+                        </h3>
+                        <p class="text-muted-foreground">
+                            Leveraging AI and smart technology to revolutionize how patients manage their medications.
+                        </p>
+                    </div>
+
+                    <div class="card text-center p-6 hover:shadow-lg transition-smooth rounded-lg">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="target" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-foreground mb-3">
+                            Precision
+                        </h3>
+                        <p class="text-muted-foreground">
+                            Accurate medication tracking and intelligent reminders help prevent missed doses and errors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-16 bg-muted/30">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                        Meet Our Leadership Team
+                    </h2>
+                    <p class="text-lg text-muted-foreground">
+                        Healthcare professionals and technology experts united by a common mission.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+                    <div class="card p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-foreground mb-2">Dr. Sarah Chen</h3>
+                        <div class="text-primary font-medium mb-3">Chief Medical Officer</div>
+                        <p class="text-muted-foreground">Former Johns Hopkins physician with 15+ years in digital health innovation.</p>
+                    </div>
+
+                    <div class="card p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-foreground mb-2">Michael Rodriguez</h3>
+                        <div class="text-primary font-medium mb-3">CEO & Co-Founder</div>
+                        <p class="text-muted-foreground">Healthcare technology veteran who lost his grandfather to medication errors.</p>
+                    </div>
+
+                    <div class="card p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-foreground mb-2">Dr. Emily Watson</h3>
+                        <div class="text-primary font-medium mb-3">VP of Clinical Affairs</div>
+                        <p class="text-muted-foreground">Board-certified pharmacist specializing in medication adherence research.</p>
+                    </div>
+
+                    <div class="card p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-foreground mb-2">David Kim</h3>
+                        <div class="text-primary font-medium mb-3">CTO & Co-Founder</div>
+                        <p class="text-muted-foreground">Former Google engineer passionate about using AI to solve healthcare challenges.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <img 
+                        src="../src/assets/healthcare-team.jpg" 
+                        alt="MediSmart healthcare and technology team"
+                        class="rounded-2xl shadow-elegant max-w-2xl mx-auto"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                        Ready to Transform Your Health Journey?
+                    </h2>
+                    <p class="text-lg text-muted-foreground mb-8">
+                        Join hundreds of thousands of users who trust MediSmart with their medication management.
+                    </p>
+                    <button class="bg-gradient-primary text-white hover:opacity-90 px-8 py-3 rounded-lg font-medium">
+                        Download MediSmart Today
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-background border-t border-border">
+        <div class="container mx-auto px-6">
+            <div class="py-12 grid lg:grid-cols-6 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                            <i data-lucide="heart" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold text-foreground">MediSmart</span>
+                    </div>
+                    <p class="text-muted-foreground mb-6 max-w-md">
+                        Revolutionizing medication management with smart reminders, AI-powered insights, 
+                        and personalized health tracking for better patient outcomes.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-foreground mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#features" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Features</a></li>
+                        <li><a href="how-it-works.html" class="text-muted-foreground hover:text-primary transition-smooth text-sm">How It Works</a></li>
+                        <li><a href="pricing.html" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-foreground mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Help Center</a></li>
+                        <li><a href="contact.html" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-foreground mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-muted-foreground hover:text-primary transition-smooth text-sm">About Us</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-foreground mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="py-6 border-t border-border text-center">
+                <div class="text-sm text-muted-foreground">
+                    © 2024 MediSmart. All rights reserved. | Made with ❤️ for better health.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

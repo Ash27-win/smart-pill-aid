@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediSmart - Smart Medicine Reminder App</title>
+    <meta name="description" content="Never miss your medicine again with MediSmart's AI-powered medication reminders, tracking, and personalized health insights. Download free today!">
+    <meta name="keywords" content="medicine reminder, medication tracker, pill reminder, health app, medication management, smart reminders">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                        <i data-lucide="heart" class="w-5 h-5 text-primary"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white">MediSmart</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html#features" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        Features
+                        <span class="nav-underline"></span>
+                    </a>
+                    <a href="how-it-works.html" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        How It Works
+                        <span class="nav-underline"></span>
+                    </a>
+                    <a href="pricing.html" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        Pricing
+                        <span class="nav-underline"></span>
+                    </a>
+                    <a href="about.html" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        About
+                        <span class="nav-underline"></span>
+                    </a>
+                    <a href="contact.html" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        Contact
+                        <span class="nav-underline"></span>
+                    </a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <button class="btn-secondary bg-white text-primary hover:bg-white/90 px-4 py-2 rounded-md text-sm font-medium">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-white/20 animate-fade-in">
+                <div class="flex flex-col gap-4">
+                    <a href="index.html#features" class="text-white/90 hover:text-white transition-smooth py-2">Features</a>
+                    <a href="how-it-works.html" class="text-white/90 hover:text-white transition-smooth py-2">How It Works</a>
+                    <a href="pricing.html" class="text-white/90 hover:text-white transition-smooth py-2">Pricing</a>
+                    <a href="about.html" class="text-white/90 hover:text-white transition-smooth py-2">About</a>
+                    <a href="contact.html" class="text-white/90 hover:text-white transition-smooth py-2">Contact</a>
+                    <button class="btn-secondary bg-white text-primary hover:bg-white/90 px-4 py-2 rounded-md text-sm font-medium mt-2">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Gradient Background -->
+        <div class="absolute inset-0 gradient-medical"></div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-32 h-32 rounded-full bg-white/20 animate-float"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 rounded-full bg-white/15 animate-float" style="animation-delay: 1s;"></div>
+            <div class="absolute bottom-32 left-1/4 w-16 h-16 rounded-full bg-white/25 animate-float" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-white/90 text-sm mb-6 animate-fade-in">
+                        <i data-lucide="play" class="w-4 h-4"></i>
+                        Smart Medicine Technology
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
+                        Never Miss Your
+                        <span class="block text-accent">Medicine Again</span>
+                    </h1>
+                    
+                    <p class="text-xl text-white/90 mb-8 max-w-lg animate-fade-in">
+                        Smart reminders, medication tracking, and personalized health insights 
+                        powered by AI to keep you healthy and on track.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in">
+                        <button class="btn-primary bg-white text-primary hover:bg-white/90 shadow-medical px-6 py-3 rounded-lg font-medium flex items-center justify-center gap-2">
+                            <i data-lucide="download" class="w-5 h-5"></i>
+                            Download App
+                        </button>
+                        <button class="btn-outline border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg font-medium flex items-center justify-center gap-2">
+                            See How It Works
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="flex items-center gap-6 mt-8 justify-center lg:justify-start text-white/80 text-sm animate-fade-in">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>FDA Approved</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>10M+ Users</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>HIPAA Compliant</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phone Mockup -->
+                <div class="flex justify-center lg:justify-end animate-slide-in-right">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-3xl blur-3xl scale-110"></div>
+                        <img 
+                            src="../src/assets/hero-phone-mockup.jpg" 
+                            alt="Smart Medicine Reminder App Interface"
+                            class="relative z-10 max-w-sm w-full h-auto rounded-3xl shadow-2xl transition-smooth hover:scale-105"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gradient-subtle">
+        <div class="container mx-auto px-6">
+            <!-- Header -->
+            <div class="text-center mb-16 animate-fade-in">
+                <div class="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2 text-primary text-sm mb-4">
+                    <i data-lucide="heart" class="w-4 h-4"></i>
+                    Powerful Features
+                </div>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+                    Everything You Need for
+                    <span class="block text-primary">Smart Medicine Management</span>
+                </h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Our comprehensive platform combines cutting-edge technology with user-friendly design 
+                    to revolutionize how you manage your medications and health.
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card group hover:shadow-card transition-smooth bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/20 p-8 rounded-lg">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-smooth">
+                        <i data-lucide="brain" class="w-7 h-7 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-card-foreground mb-3 group-hover:text-primary transition-smooth">
+                        Smart AI Reminders
+                    </h3>
+                    <p class="text-muted-foreground leading-relaxed">
+                        Advanced AI learns your routine and sends personalized medication reminders at optimal times.
+                    </p>
+                </div>
+
+                <div class="card group hover:shadow-card transition-smooth bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/20 p-8 rounded-lg">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-smooth">
+                        <i data-lucide="shield" class="w-7 h-7 text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-card-foreground mb-3 group-hover:text-primary transition-smooth">
+                        Medication Tracking
+                    </h3>
+                    <p class="text-muted-foreground leading-relaxed">
+                        Comprehensive medication management with drug interaction checks and side effect monitoring.
+                    </p>
+                </div>
+
+                <div class="card group hover:shadow-card transition-smooth bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/20 p-8 rounded-lg">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-smooth">
+                        <i data-lucide="heart" class="w-7 h-7 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-card-foreground mb-3 group-hover:text-primary transition-smooth">
+                        Health Insights
+                    </h3>
+                    <p class="text-muted-foreground leading-relaxed">
+                        Personalized health analytics and progress tracking to optimize your medication adherence.
+                    </p>
+                </div>
+
+                <div class="card group hover:shadow-card transition-smooth bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/20 p-8 rounded-lg">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-smooth">
+                        <i data-lucide="clock" class="w-7 h-7 text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-card-foreground mb-3 group-hover:text-primary transition-smooth">
+                        Flexible Scheduling
+                    </h3>
+                    <p class="text-muted-foreground leading-relaxed">
+                        Customizable reminder schedules that adapt to your lifestyle and medication requirements.
+                    </p>
+                </div>
+
+                <div class="card group hover:shadow-card transition-smooth bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/20 p-8 rounded-lg">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-smooth">
+                        <i data-lucide="smartphone" class="w-7 h-7 text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-card-foreground mb-3 group-hover:text-primary transition-smooth">
+                        Cross-Platform Sync
+                    </h3>
+                    <p class="text-muted-foreground leading-relaxed">
+                        Seamless synchronization across all your devices with cloud backup and family sharing.
+                    </p>
+                </div>
+
+                <div class="card group hover:shadow-card transition-smooth bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/20 p-8 rounded-lg">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-smooth">
+                        <i data-lucide="bar-chart-3" class="w-7 h-7 text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-card-foreground mb-3 group-hover:text-primary transition-smooth">
+                        Progress Analytics
+                    </h3>
+                    <p class="text-muted-foreground leading-relaxed">
+                        Detailed reports and trends to share with healthcare providers and track improvements.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="mt-20 bg-white rounded-3xl shadow-card p-8 md:p-12 animate-fade-in">
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-primary mb-2">10M+</div>
+                        <div class="text-muted-foreground">Active Users</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-primary mb-2">95%</div>
+                        <div class="text-muted-foreground">Adherence Rate</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-primary mb-2">24/7</div>
+                        <div class="text-muted-foreground">Support</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl md:text-4xl font-bold text-primary mb-2">4.9★</div>
+                        <div class="text-muted-foreground">App Store Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="relative py-20 overflow-hidden bg-gradient-primary">
+        <!-- Decorative Elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 right-20 w-40 h-40 rounded-full bg-white/20 animate-float"></div>
+            <div class="absolute bottom-20 left-10 w-32 h-32 rounded-full bg-white/15 animate-float" style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-white/90 text-sm mb-6">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    Available Now
+                </div>
+                
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                    Start Your Journey to Better Health Today
+                </h2>
+                
+                <p class="text-xl text-white/90 mb-12">
+                    Join millions of users who trust MediSmart with their medication management. 
+                    Download now and take control of your health.
+                </p>
+
+                <!-- App Store Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <button class="inline-flex items-center gap-3 bg-white text-gray-900 px-6 py-4 rounded-xl font-medium hover:bg-white/90 transition-smooth shadow-xl">
+                        <i data-lucide="smartphone" class="w-6 h-6"></i>
+                        <div class="text-left">
+                            <div class="text-xs">Download on the</div>
+                            <div class="text-lg font-bold">App Store</div>
+                        </div>
+                    </button>
+                    <button class="inline-flex items-center gap-3 bg-white text-gray-900 px-6 py-4 rounded-xl font-medium hover:bg-white/90 transition-smooth shadow-xl">
+                        <i data-lucide="smartphone" class="w-6 h-6"></i>
+                        <div class="text-left">
+                            <div class="text-xs">Get it on</div>
+                            <div class="text-lg font-bold">Google Play</div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Features -->
+                <div class="grid md:grid-cols-3 gap-6 text-white/90">
+                    <div class="flex items-center justify-center gap-2">
+                        <i data-lucide="check-circle" class="w-5 h-5"></i>
+                        <span>Free to Download</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <i data-lucide="check-circle" class="w-5 h-5"></i>
+                        <span>No Ads or Subscriptions</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <i data-lucide="check-circle" class="w-5 h-5"></i>
+                        <span>HIPAA Compliant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-background border-t border-border">
+        <div class="container mx-auto px-6">
+            <!-- Main Footer Content -->
+            <div class="py-12 grid lg:grid-cols-6 gap-8">
+                <!-- Brand Section -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                            <i data-lucide="heart" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold text-foreground">MediSmart</span>
+                    </div>
+                    <p class="text-muted-foreground mb-6 max-w-md">
+                        Revolutionizing medication management with smart reminders, AI-powered insights, 
+                        and personalized health tracking for better patient outcomes.
+                    </p>
+                    
+                    <!-- Contact Info -->
+                    <div class="space-y-2 text-sm text-muted-foreground">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <span>support@medismart.com</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            <span>1-800-MEDISMART</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>San Francisco, CA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Links -->
+                <div>
+                    <h3 class="font-semibold text-foreground mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Features</a></li>
+                        <li><a href="how-it-works.html" class="text-muted-foreground hover:text-primary transition-smooth text-sm">How It Works</a></li>
+                        <li><a href="pricing.html" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Pricing</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support Links -->
+                <div>
+                    <h3 class="font-semibold text-foreground mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Help Center</a></li>
+                        <li><a href="contact.html" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Contact Us</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">System Status</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">API Docs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h3 class="font-semibold text-foreground mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-muted-foreground hover:text-primary transition-smooth text-sm">About Us</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Careers</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Press Kit</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Partners</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links -->
+                <div>
+                    <h3 class="font-semibold text-foreground mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Terms of Service</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">HIPAA Compliance</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-smooth text-sm">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="py-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-sm text-muted-foreground">
+                    © 2024 MediSmart. All rights reserved. | Made with ❤️ for better health.
+                </div>
+                
+                <!-- Social Links -->
+                <div class="flex items-center gap-4">
+                    <a href="#" class="w-9 h-9 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-smooth group">
+                        <i data-lucide="facebook" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-smooth group">
+                        <i data-lucide="twitter" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-smooth group">
+                        <i data-lucide="instagram" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-smooth group">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

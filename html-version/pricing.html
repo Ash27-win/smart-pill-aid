@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - MediSmart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                        <i data-lucide="heart" class="w-5 h-5 text-primary"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white">MediSmart</span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html#features" class="text-white/90 hover:text-white transition-smooth">Features</a>
+                    <a href="how-it-works.html" class="text-white/90 hover:text-white transition-smooth">How It Works</a>
+                    <a href="pricing.html" class="text-white transition-smooth">Pricing</a>
+                    <a href="about.html" class="text-white/90 hover:text-white transition-smooth">About</a>
+                    <a href="contact.html" class="text-white/90 hover:text-white transition-smooth">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-white/20">
+                <div class="flex flex-col gap-4">
+                    <a href="index.html#features" class="text-white/90 py-2">Features</a>
+                    <a href="how-it-works.html" class="text-white/90 py-2">How It Works</a>
+                    <a href="pricing.html" class="text-white py-2">Pricing</a>
+                    <a href="about.html" class="text-white/90 py-2">About</a>
+                    <a href="contact.html" class="text-white/90 py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="min-h-screen bg-gradient-subtle">
+        <section class="pt-24 pb-16">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-foreground mb-6">Choose Your Health Plan</h1>
+                <p class="text-xl text-muted-foreground">Find the perfect plan for your medication management needs.</p>
+            </div>
+        </section>
+
+        <section class="pb-16">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Basic Plan -->
+                    <div class="card p-8 rounded-lg">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="heart" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-2">Basic</h3>
+                        <div class="text-3xl font-bold text-primary text-center mb-4">Free</div>
+                        <p class="text-muted-foreground text-center mb-6">Perfect for individuals getting started</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-primary mt-0.5"></i><span>Up to 5 medications</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-primary mt-0.5"></i><span>Basic pill reminders</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-primary mt-0.5"></i><span>Mobile app access</span></li>
+                        </ul>
+                        <button class="w-full btn-outline border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-lg font-medium">Get Started Free</button>
+                    </div>
+
+                    <!-- Family Plan -->
+                    <div class="card p-8 rounded-lg ring-2 ring-primary relative">
+                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">Most Popular</div>
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="sparkles" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-2">Family</h3>
+                        <div class="text-3xl font-bold text-primary text-center mb-4">$9.99<span class="text-lg text-muted-foreground">/month</span></div>
+                        <p class="text-muted-foreground text-center mb-6">Ideal for families managing medications</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-primary mt-0.5"></i><span>Unlimited medications</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-primary mt-0.5"></i><span>Smart AI reminders</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-primary mt-0.5"></i><span>Family sharing (up to 6)</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-primary mt-0.5"></i><span>Priority support</span></li>
+                        </ul>
+                        <button class="w-full bg-gradient-primary text-white hover:opacity-90 px-6 py-3 rounded-lg font-medium">Start 30-Day Free Trial</button>
+                    </div>
+
+                    <!-- Premium Plan -->
+                    <div class="card p-8 rounded-lg">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="shield" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-2">Premium</h3>
+                        <div class="text-3xl font-bold text-primary text-center mb-4">$19.99<span class="text-lg text-muted-foreground">/month</span></div>
+                        <p class="text-muted-foreground text-center mb-6">Comprehensive solution for complex needs</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-primary mt-0.5"></i><span>Everything in Family</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-primary mt-0.5"></i><span>Unlimited family members</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-primary mt-0.5"></i><span>24/7 pharmacist consultation</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-primary mt-0.5"></i><span>Healthcare provider dashboard</span></li>
+                        </ul>
+                        <button class="w-full btn-outline border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-lg font-medium">Start Premium Trial</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-background border-t border-border py-6 text-center">
+        <div class="text-sm text-muted-foreground">© 2024 MediSmart. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

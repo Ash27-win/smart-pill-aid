@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MediSmart</title>
+    <meta name="description" content="Get in touch with MediSmart's support team. We're here to help with your medication management questions 24/7.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                        <i data-lucide="heart" class="w-5 h-5 text-primary"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white">MediSmart</span>
+                </a>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html#features" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        Features<span class="nav-underline"></span>
+                    </a>
+                    <a href="how-it-works.html" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        How It Works<span class="nav-underline"></span>
+                    </a>
+                    <a href="pricing.html" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        Pricing<span class="nav-underline"></span>
+                    </a>
+                    <a href="about.html" class="nav-link text-white/90 hover:text-white transition-smooth relative group">
+                        About<span class="nav-underline"></span>
+                    </a>
+                    <a href="contact.html" class="nav-link text-white transition-smooth relative group">
+                        Contact<span class="nav-underline w-full"></span>
+                    </a>
+                </div>
+
+                <div class="hidden md:block">
+                    <button class="btn-secondary bg-white text-primary hover:bg-white/90 px-4 py-2 rounded-md text-sm font-medium">
+                        Get Started
+                    </button>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-white/20">
+                <div class="flex flex-col gap-4">
+                    <a href="index.html#features" class="text-white/90 hover:text-white transition-smooth py-2">Features</a>
+                    <a href="how-it-works.html" class="text-white/90 hover:text-white transition-smooth py-2">How It Works</a>
+                    <a href="pricing.html" class="text-white/90 hover:text-white transition-smooth py-2">Pricing</a>
+                    <a href="about.html" class="text-white/90 hover:text-white transition-smooth py-2">About</a>
+                    <a href="contact.html" class="text-white transition-smooth py-2">Contact</a>
+                    <button class="btn-secondary bg-white text-primary hover:bg-white/90 px-4 py-2 rounded-md text-sm font-medium mt-2">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="min-h-screen bg-gradient-subtle">
+        <!-- Hero Section -->
+        <section class="pt-24 pb-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-4xl mx-auto mb-16">
+                    <h1 class="text-4xl md:text-6xl font-bold text-foreground mb-6">
+                        We're Here to Help
+                    </h1>
+                    <p class="text-xl text-muted-foreground leading-relaxed">
+                        Have questions about MediSmart? Need technical support? 
+                        Our dedicated team of healthcare and technical experts is ready to assist you.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Methods -->
+        <section class="pb-16">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="card text-center p-6 hover:shadow-lg transition-smooth rounded-lg">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="mail" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-foreground mb-3">Email Support</h3>
+                        <p class="text-muted-foreground mb-3">Get help from our medical support team</p>
+                        <div class="font-medium text-primary mb-2">support@medismart.com</div>
+                        <div class="text-sm text-muted-foreground">24/7 response within 2 hours</div>
+                    </div>
+
+                    <div class="card text-center p-6 hover:shadow-lg transition-smooth rounded-lg">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="phone" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-foreground mb-3">Phone Support</h3>
+                        <p class="text-muted-foreground mb-3">Speak directly with our care specialists</p>
+                        <div class="font-medium text-primary mb-2">1-800-MEDISMART</div>
+                        <div class="text-sm text-muted-foreground">Mon-Fri: 8am-8pm EST</div>
+                    </div>
+
+                    <div class="card text-center p-6 hover:shadow-lg transition-smooth rounded-lg">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="message-circle" class="w-8 h-8 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-foreground mb-3">Live Chat</h3>
+                        <p class="text-muted-foreground mb-3">Instant help through our app</p>
+                        <div class="font-medium text-primary mb-2">Available in MediSmart app</div>
+                        <div class="text-sm text-muted-foreground">24/7 automated + live agents</div>
+                    </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12 items-start">
+                    <!-- Contact Form -->
+                    <div class="card p-8 rounded-lg">
+                        <h2 class="text-2xl font-bold mb-2">Send Us a Message</h2>
+                        <p class="text-muted-foreground mb-6">
+                            Fill out the form below and we'll get back to you within 24 hours.
+                        </p>
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-foreground mb-2">
+                                        First Name
+                                    </label>
+                                    <input type="text" placeholder="John" required />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-foreground mb-2">
+                                        Last Name
+                                    </label>
+                                    <input type="text" placeholder="Doe" required />
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-foreground mb-2">
+                                    Email Address
+                                </label>
+                                <input type="email" placeholder="john.doe@example.com" required />
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-foreground mb-2">
+                                    Subject
+                                </label>
+                                <input type="text" placeholder="How can we help you?" required />
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-foreground mb-2">
+                                    Message
+                                </label>
+                                <textarea 
+                                    placeholder="Please describe your question or issue in detail..."
+                                    rows="5"
+                                    required
+                                ></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-gradient-primary text-white hover:opacity-90 py-3 rounded-lg font-medium">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Image & Info -->
+                    <div class="space-y-8">
+                        <img 
+                            src="../src/assets/contact-support.jpg" 
+                            alt="MediSmart customer support team"
+                            class="rounded-2xl shadow-elegant w-full"
+                        />
+                        
+                        <div class="card p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold flex items-center gap-2 mb-4">
+                                <i data-lucide="clock" class="w-5 h-5 text-primary"></i>
+                                Support Hours
+                            </h3>
+                            <div class="space-y-2 text-muted-foreground">
+                                <div>Emergency Support: 24/7</div>
+                                <div>Phone Support: Mon-Fri 8am-8pm EST</div>
+                                <div>Email Support: 24/7 (2hr response)</div>
+                                <div>Live Chat: 24/7 in app</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Office Locations -->
+        <section class="py-16 bg-muted/30">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                        Our Office Locations
+                    </h2>
+                    <p class="text-lg text-muted-foreground">
+                        Visit us at any of our locations across the United States.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card p-6 text-center rounded-lg">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-foreground mb-2">San Francisco, CA</h3>
+                        <div class="text-sm text-primary font-medium mb-3">Headquarters</div>
+                        <div class="text-muted-foreground mb-2">123 Healthcare Blvd, Suite 400</div>
+                        <div class="text-muted-foreground">+1 (415) 123-4567</div>
+                    </div>
+
+                    <div class="card p-6 text-center rounded-lg">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-foreground mb-2">Austin, TX</h3>
+                        <div class="text-sm text-primary font-medium mb-3">Development Center</div>
+                        <div class="text-muted-foreground mb-2">456 Innovation Drive, Floor 3</div>
+                        <div class="text-muted-foreground">+1 (512) 987-6543</div>
+                    </div>
+
+                    <div class="card p-6 text-center rounded-lg">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-foreground mb-2">Boston, MA</h3>
+                        <div class="text-sm text-primary font-medium mb-3">Clinical Operations</div>
+                        <div class="text-muted-foreground mb-2">789 Medical Center Way, Suite 200</div>
+                        <div class="text-muted-foreground">+1 (617) 555-0123</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contact -->
+        <section class="py-16">
+            <div class="container mx-auto px-6 text-center">
+                <div class="card max-w-3xl mx-auto p-8 bg-red-50 border border-red-200 rounded-lg">
+                    <h2 class="text-2xl font-bold text-foreground mb-4">
+                        Medical Emergency?
+                    </h2>
+                    <p class="text-muted-foreground mb-6">
+                        For immediate medical emergencies, please contact your local emergency services 
+                        or call 911. MediSmart support is for app-related questions and technical assistance only.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <button class="btn-outline border-red-500 text-red-600 hover:bg-red-50 px-6 py-3 rounded-lg font-medium">
+                            Call 911
+                        </button>
+                        <button class="btn-outline border-red-500 text-red-600 hover:bg-red-50 px-6 py-3 rounded-lg font-medium">
+                            Poison Control: 1-800-222-1222
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-background border-t border-border">
+        <div class="container mx-auto px-6">
+            <div class="py-12 grid lg:grid-cols-6 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                            <i data-lucide="heart" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold text-foreground">MediSmart</span>
+                    </div>
+                    <p class="text-muted-foreground mb-6">
+                        Revolutionizing medication management with smart reminders.
+                    </p>
+                </div>
+            </div>
+            <div class="py-6 border-t border-border text-center">
+                <div class="text-sm text-muted-foreground">
+                    © 2024 MediSmart. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
